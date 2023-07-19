@@ -21,9 +21,6 @@ public class CSVWriterUtils {
 	}
 	
 	private static String quoteStringIfNeeded(String str) {
-		if (str == null) {
-			return null;
-		}
 	    boolean needQuotes = (str.indexOf(',') != -1 || str.indexOf('"') != -1 ||
 	         str.indexOf('\n') != -1 || str.indexOf('\r') != -1);
 	      
